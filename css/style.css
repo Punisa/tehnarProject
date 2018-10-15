@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma;
+}
+
+body {
+	background: #eee;
+}
+
+nav {
+	width: 100%;
+	border-bottom: 3px solid  #000;
+	background: #68A5FF;
+}
+
+#nav-ul {
+	text-align: center;
+	list-style: none;
+}
+
+.nav-ul-item {
+	display: inline-block;
+	padding: 1em 2em;
+	font-size: 15pt;
+}
+.nav-ul-item:hover {
+	cursor: pointer;
+	background: #000;
+	color: #eee;
+}

@@ -9,8 +9,8 @@ $(document).ready(function () {
 		hiel.append("АТЫНЕВЕРИЛ, ДА?")
 	}) 
 	hiel.contextmenu(function () {
-		hiel.css('background','#212121');
-		hiel.css('color','#eee');
+		//hiel.css('background','#212121').css('color','#eee');
+		hiel.html('<i class="fas fa-award"></i>');
 	})
 	hiel.change(function () {
 		let c = 0;
