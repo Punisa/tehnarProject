@@ -60,54 +60,75 @@
 //console.log(document.forms);
 
 
-let btn = document.getElementById('btn');
-let inp = document.getElementById('inp');
+// let btn = document.getElementById('btn');
+// let inp = document.getElementById('inp');
 
 
-btn.onclick = function(event) {
-	event.preventDefault();
-	console.log('click');
-	// console.log(document.forms.test_form.test.value);
-	// console.log('------------------------------------');
-	// console.log(document.forms['test_form']['test'].value);
-	// console.log('------------------------------------');
-	// let data = new FormData(document.forms.test_form);
-	// console.log(data);
-	// console.log(data.get("test"));
-	// console.log('------------------------------------');
-}
+// btn.onclick = function(event) {
+// 	event.preventDefault();
+// 	console.log('click');
+// 	// console.log(document.forms.test_form.test.value);
+// 	// console.log('------------------------------------');
+// 	// console.log(document.forms['test_form']['test'].value);
+// 	// console.log('------------------------------------');
+// 	// let data = new FormData(document.forms.test_form);
+// 	// console.log(data);
+// 	// console.log(data.get("test"));
+// 	// console.log('------------------------------------');
+// }
 
-btn.oncontextmenu = function() {
-	console.log('contextMenu');
-}
+// btn.oncontextmenu = function() {
+// 	console.log('contextMenu');
+// }
 
-btn.onmousedown = function() {
-	console.log('мышка нажата');
-}
-btn.onmouseup = function() {
-	console.log('мышка опущена');
-}
+// btn.onmousedown = function() {
+// 	console.log('мышка нажата');
+// }
+// btn.onmouseup = function() {
+// 	console.log('мышка опущена');
+// }
 
-btn.onmouseleave = function() {
-	console.log('мышка уведена');
-}
+// btn.onmouseleave = function() {
+// 	console.log('мышка уведена');
+// }
 
-btn.onmouseenter = function() {
-	console.log('мышка Наведена');
-}
+// btn.onmouseenter = function() {
+// 	console.log('мышка Наведена');
+// }
 
-inp.onkeydown = function() {
-	console.log('click');
-}
+// inp.onkeydown = function() {
+// 	console.log('click');
+// }
 
-inp.onfocus = function() {
-	console.log('focus');
-}
+// inp.onfocus = function() {
+// 	console.log('focus');
+// }
 
-inp.onblur = function() {
-	console.log('blur');
-}
+// inp.onblur = function() {
+// 	console.log('blur');
+// }
 
-window.onload = function() {
-	console.log('window load');
+// window.onload = function() {
+// 	console.log('window load');
+// }
+
+window.onload = function () {
+	let canvas = document.getElementById('canvas');
+	let ctx = canvas.getContext('2d');
+	let x = 0;
+	let y = 0;
+
+	for(let i = 0; i<20; i++) {
+		x = i;
+		let oldX = 0, oldY = 0;
+		console.log("x"+ x);
+		y = x*x;
+		console.log("y"+y)
+		ctx.fillRect(x*5, y, 10, 10);
+		ctx.fillStyle = 'yellow';
+		ctx.fill();
+		oldX = x;
+		oldY = y;
+	}
+
 }

@@ -71,3 +71,7 @@ footer ul li:hover {
 	color:  #212121;
 	cursor: pointer;
 }
+
+#canvas {
+	border: 1px solid #eee;
+}
